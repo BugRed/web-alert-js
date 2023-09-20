@@ -1,13 +1,16 @@
 import { Notifyer } from "./Notifyer.js";
+import { Timer } from "./Timer.js";
 
 const App = {
     async start(){
         try{
-            await Notifyer.init()
-            Notifyer.notify({
-                title:"Post hour",
-                body: "NEXT POST"
-            })
+
+            Timer.init()
+            // await Notifyer.init()
+            // Notifyer.notify({
+            //     title:"Post hour",
+            //     body: "NEXT POST"
+            // })
         } catch (err) {
             console.log(err.message)
         }

@@ -14,6 +14,7 @@ const Emitter = {
         if (event in Emitter.events === false) {
             return;
         }
+
         //utilizando prototype do array
         Emitter.events[event].forEach((e) => {
             //definindo um canal rest

@@ -30,7 +30,7 @@ const App = {
             Emitter.on('countdown-end', Timer.init)
 
 
-            Timer.init(0.1 * 60)
+            Timer.init()
 
         } catch (err) {
             console.log(err.message)

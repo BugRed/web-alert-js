@@ -1,15 +1,19 @@
 {
-  "name": "insta_reminder",
+  "name": "game_reminder",
   "version": "1.0.0",
   "description": "",
-  "main": "main.js",
+  "main": "electron/main.js",
   "scripts": {
-    "start": "electron ."
+    "start": "electron .",
+    "build": "npx electron-packager . --icon assets/chess.icns --out=packages"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "electron": "^26.2.2"
+  },
+  "dependencies": {
+    "electron-packager": "^17.1.2"
   }
 }
